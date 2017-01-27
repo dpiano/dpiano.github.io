@@ -22,14 +22,34 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
-.hiking{
-   float: left;
-   margin-right: 25px;
-   width:20%;
-   max-width: 20%;
-   min-width: 20%;
-   display: block;
+#iconpack{
+  height: 190px;
+  float: left;
+
 }
+#hiking{
+  height: 225px;
+  float: right;
+}
+
+
+#hiking2{
+  height: 225px;
+  float: right;
+  margin-right: 10px;
+}
+
+#social{
+  text-align: left;
+  font-size: 150%;
+}
+
+p{
+  font-size: 160%;
+}
+
+
+
 
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -50,6 +70,8 @@ body {
 .site-wrapper-inner {
     display: table-cell;
     vertical-align: top;
+    background-color:   rgba(0, 0, 0, .25);
+
 }
 
 .cover-container {
@@ -62,6 +84,7 @@ body {
 
 .inner {
     padding: 30px;
+
 }
 
 
