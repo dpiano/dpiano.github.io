@@ -15,6 +15,24 @@
   line-height: 75px;
 }
 
+.middle{
+  height:500px;
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.middlelefttoptwo{
+  height: 150px;
+  max-height: 150px;
+  min-height: 150px;
+}
+
+.middleleftbottomone{
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+}
+
 
 .big{
   font-family: 'Bahiana', cursive;
