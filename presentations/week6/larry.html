@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Center</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <style media="screen">
+        body{
+          display: none;
+        }
+
+
+        .centerType {
+            padding: 25px 25px;
+        }
+        .randomColor {
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+            border: 1px solid black;
+        }
+        /*------------*/
+        .paddingMargin img {
+            margin-top: 8%;
+            margin-left: 30%;
+        }
+        .paddingMargin div {
+            margin-left: 20%;
+        }
+        /*------------*/
+        /*------------*/
+        .textAlignCenter {
+            text-align: center;
+        }
+        /*------------*/
+        /*------------*/
+        .marginAuto {
+            margin: 0 auto;
+            width: 50%;
+        }
+        /*------------*/
+        /*------------*/
+        img.displayed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+        /*------------*/
+        /*------------*/
+        .paddingMarginPlus img {
+            padding-top: 10%;
+            padding-bottom: 3%;
+            display: block;
+            margin: 0 auto;
+        }
+        .paddingMarginPlus div {
+            padding: 3%;
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertRelativeContainer {
+            position: relative;
+        }
+        .horAndVertRelativeContainer img {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .horAndVertRelativeContainer div {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertRelativeWithChild {
+            position: relative;
+        }
+        .horAndVertAbsoluteChild {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertFlexContainerElementsVertical {
+            height: 100px;
+            /* using flex*/
+            display: flex;
+            /* vertical display */
+            align-items: center;
+            /*horizontal display */
+            justify-content: center;
+            /* flow of items */
+            flex-flow: column;
+        }
+        .horAndVertFlexContainerElementsVertical div{
+          width:60%;
+        }
+        /*------------*/
+        /*------------*/
+        .horAndVertFlexContainerElementsHorizontal {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav{
+          height: 70px;
+          max-height: 70px;
+          min-height: 70px;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 15px;
+          font-weight: bold;
+        }
+
+        .secondtext{
+          height: 50px;
+          max-height: 50px;
+          min-height: 50px;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 10px;
+        }
+
+        .heading{
+          height: 100px;
+          max-height: 100px;
+          min-height: 100px;
+        }
+
+        .pic1{
+          padding-top:5%;
+          padding-left: 10%;
+          height: 400px;
+          max-height: 400px;
+          min-height: 400px
+        }
+
+        .pic2{
+          padding-top: 5%;
+          padding-left: 10%;
+          height: 430px;
+          min-height: 430px;
+          max-height: 430px;
+        }
+
+        .leftside{
+          height: 1000px;
+          max-height: 1000px;
+          min-height: 1000px;
+        }
+.rightside{
+  height: 1000px;
+  max-height: 1000px;
+  min-height: 1000px;
+}
+
+.firstparagraph{
+padding: 50px;
+}
+
+.secondparagraph{
+  padding: 50px;
+}
+
+    </style>
+</head>
+
+<body>
+
+        <div class="heading randomColor col-md-12">
+
+                <h1 class="textAlignCenter">Larry The Leaser</h1>
+
+        </div>
+
+        <div class="nav randomColor col-md-12">
+
+                <h1 class="textAlignCenter">Nav Bar</h1>
+
+        </div>
+
+        <!--    First Row         -->
+        <div class="row">
+            <div class="col-md-9 leftside randomColor">
+
+                <br>
+                <img class="pic1" src="images/shelby.jpg" alt="GT350R">
+                <p id="firstparagraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales iaculis erat ut auctor. Aliquam porta tellus et tortor semper mollis. Maecenas quis egestas nulla. Nam porttitor dui vitae nulla consequat, in ultricies nunc venenatis. Nullam ultrices volutpat leo, quis aliquet est lacinia non. Donec iaculis suscipit sem, et semper metus facilisis dignissim. Curabitur vel vehicula est. Vivamus mauris augue, dignissim non velit eu, ornare interdum elit.
+                </p>
+                <img class = "pic2" src="images/challenger.jpg" alt="Challenger">
+                <p id="secondparagraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales iaculis erat ut auctor. Aliquam porta tellus et tortor semper mollis. Maecenas quis egestas nulla. Nam porttitor dui vitae nulla consequat, in ultricies nunc venenatis. Nullam ultrices volutpat leo, quis aliquet est lacinia non. Donec iaculis suscipit sem, et semper metus facilisis dignissim. Curabitur vel vehicula est. Vivamus mauris augue, dignissim non velit eu, ornare interdum elit.
+                </p>
+
+            </div>
+            <div class="col-md-3 rightside randomColor">
+              <h1>Available Cars</h1>
+                <img class = "car1" src="images/car1.jpg" alt="Car1">
+                <img class = "car2" src="images/car2.jpg" alt="Car2">
+
+            </div>
+
+          </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min,max) {
+            return Math.floor(Math.random() * max + min);
+        }
+        $(document).ready(function() {
+            var bodyColumns = $(".randomColor");
+            bodyColumns.each(function() {
+                $(this).css("background-color", "rgb(" + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + ")");
+            })
+            $("body").css("background-color", "rgb(" + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + ")");
+            $("body").fadeIn();
+        })
+    </script>
+</body>
+
+</html>
