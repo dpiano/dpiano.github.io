@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+  </head>
+  <body>
+    Hello world!
+
+    <div id= "mydiv">
+      Look some text!
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+//alert("this is a popup");
+console.log("this is for debugging messages");
+var myVar;
+var myAnothervar = "here is my another var";
+alert(myAnothervar);
+console.log(myAnothervar);
+//concatenation
+var myName = "Piano";
+var myfirstname = "David";
+//alert("My name is" +myfirstname +myName);
+function saymyname(){
+  console.log("Your name is" +myName);
+}
+saymyname();
+function saymyname2(name){
+  console.log("Your name is" +name);
+}
+saymyname2("David");
+saymyname2("Geordie");
+
+$(document).ready(function(){
+//alert("the document is ready");
+$("#mydiv").html("Hey, i was able to change the DOM");
+$("#mydiv").append(<br>"add something more!")
+
+});
+
+
+    </script>
+
+  </body>
+</html>
