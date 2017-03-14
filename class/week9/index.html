@@ -65,6 +65,30 @@ $(document).ready(function() {
 
 }
 $("body").append("The product is " + product + "<br>");
+
+
+var car = {
+  type : "SUV",
+  price : 45000,
+  mileage: 24,
+  color: "magenta",
+  fuelType : "electric",
+  src : "images/car1.jpg",
+  }
+
+  for (var key in car){
+
+$("body").append("Key name is " + key + " and value is "+car[key] + "<br>");
+
+  }
+};
+
+
+
+
+
+
+
 })
 
 
