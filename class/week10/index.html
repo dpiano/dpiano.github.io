@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holy Grail</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media = "screen">
+.nav{
+  height: 150px;
+  max-height: 150px;
+  min-height: 150px;
+}
+
+.ads{
+height: 500px;
+max-height: 500px;
+min-height: 500px;
+
+}
+
+.posts{
+  height: 500px;
+  max-height: 500px;
+  min-height;
+
+}
+
+.footer{
+  height:150px;
+  max-height: 150px;
+  min-height: 150px;
+}
+
+
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class = "container randomColor">
+      <div class = "row randomColor">
+        <div class = "col-md-12 randomColor nav">
+          <ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+        </div>
+
+        <div class = "col-md-2 randomColor ads">
+
+        </div>
+        <div class = "col-md-8 randomColor posts">
+
+        </div>
+        <div class = "col-md-2 randomColor ads">
+
+        </div>
+        <div class = "col-md-12 randomColor footer">
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min,max) {
+            return Math.floor(Math.random() * max + min);
+        }
+        $(document).ready(function() {
+            var bodyColumns = $(".randomColor");
+            bodyColumns.each(function() {
+                $(this).css("background-color", "rgb(" + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + ")");
+            })
+            $("body").css("background-color", "rgb(" + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + ")");
+            $("body").fadeIn();
+        })
+    </script>
+    <script type = "text/javascript">
+
+    var postsData = [
+{
+      image: "images/pic1.png",
+      subheading: "It's a beautiful day",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget augue vitae sem maximus tristique. Vivamus vehicula tincidunt purus dignissim fermentum. Quisque convallis semper eros, et laoreet nisi suscipit eget. Aenean aliquet vehicula lacus, a lacinia erat pretium ac. Aliquam mauris leo, pretium vitae ligula quis, varius tristique quam. Curabitur eu urna id massa iaculis placerat consequat eu nisi. Phasellus pulvinar elit vitae hendrerit mollis."
+},
+{
+  image: "images/pic2.png",
+  subheading: "It's a beautiful day",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget augue vitae sem maximus tristique. Vivamus vehicula tincidunt purus dignissim fermentum. Quisque convallis semper eros, et laoreet nisi suscipit eget. Aenean aliquet vehicula lacus, a lacinia erat pretium ac. Aliquam mauris leo, pretium vitae ligula quis, varius tristique quam. Curabitur eu urna id massa iaculis placerat consequat eu nisi. Phasellus pulvinar elit vitae hendrerit mollis."
+
+},
+{
+  image: "images/pic3.png",
+  subheading: "It's a beautiful day",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget augue vitae sem maximus tristique. Vivamus vehicula tincidunt purus dignissim fermentum. Quisque convallis semper eros, et laoreet nisi suscipit eget. Aenean aliquet vehicula lacus, a lacinia erat pretium ac. Aliquam mauris leo, pretium vitae ligula quis, varius tristique quam. Curabitur eu urna id massa iaculis placerat consequat eu nisi. Phasellus pulvinar elit vitae hendrerit mollis."
+
+},
+{
+  image: "images/pic4.png",
+  subheading: "It's a beautiful day",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget augue vitae sem maximus tristique. Vivamus vehicula tincidunt purus dignissim fermentum. Quisque convallis semper eros, et laoreet nisi suscipit eget. Aenean aliquet vehicula lacus, a lacinia erat pretium ac. Aliquam mauris leo, pretium vitae ligula quis, varius tristique quam. Curabitur eu urna id massa iaculis placerat consequat eu nisi. Phasellus pulvinar elit vitae hendrerit mollis."
+
+},
+{
+  image: "images/pic5.png",
+  subheading: "It's a beautiful day",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget augue vitae sem maximus tristique. Vivamus vehicula tincidunt purus dignissim fermentum. Quisque convallis semper eros, et laoreet nisi suscipit eget. Aenean aliquet vehicula lacus, a lacinia erat pretium ac. Aliquam mauris leo, pretium vitae ligula quis, varius tristique quam. Curabitur eu urna id massa iaculis placerat consequat eu nisi. Phasellus pulvinar elit vitae hendrerit mollis."
+
+},
+{
+  image: "images/pic6.png",
+  subheading: "It's a beautiful day",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget augue vitae sem maximus tristique. Vivamus vehicula tincidunt purus dignissim fermentum. Quisque convallis semper eros, et laoreet nisi suscipit eget. Aenean aliquet vehicula lacus, a lacinia erat pretium ac. Aliquam mauris leo, pretium vitae ligula quis, varius tristique quam. Curabitur eu urna id massa iaculis placerat consequat eu nisi. Phasellus pulvinar elit vitae hendrerit mollis."
+
+}
+];
+var myHtml = "";
+for(var i=0;i<postsData.length; i=i+1){
+myHtml = myHtml + '  <div class="media">' +
+'<div class="media-left">' +
+  '<a href="#">' +
+    '<img class="media-object" src="..." alt="...">'
+  '</a>' +
+'</div>' +
+'<div class="media-body">' +
+  '<h4 class="media-heading">Media heading</h4>'
+  '...' +
+'</div>' +
+'</div>' ;
+
+
+}
+$(document).ready(function(){
+  $("#posts").html(myHtml);
+})
+
+
+    </script>
+  </body>
+</html>
