@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Week 11</title>
+    <title>NHL Rookie Leaders</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -13,71 +13,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
 
     <style media="screen">
-    /*background*/
-        #background {
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            z-index: -1;
-            /* Ensure div tag stays behind content; -999 might work, too. */
-        }
-        #background img {
-            width: 100%;
-            height: 100%;
-        }
-        /*global css*/
-        .font36 {
-            font-size: 36px;
-        }
-        .font24 {
-            font-size: 24px;
-        }
-        .font16 {
-            font-size: 16px;
-        }
-/*container*/
-        #myContainer {
-            height: 100%;
-            position: relative:
-        }
-        #NHLContainer {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: #FFF;
-            padding-top: 64px;
-            padding-bottom: 64px;
-            text-align: center;
-        }
-        #NHLContainer div {
-            padding: 10px;
-        }
-        #NHLContainer {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin: 0 auto;
-            width: 80%;
-        }
-        #NHLContainer div {
-            padding-top: 3px;
-            padding-bottom: 3px;
-        }
+    .height1{
+      height: 75px;
+      min-height: 75px;
+      max-height: 75px;
+    }
+    .height2{
+      height: 800px;
+      min-height: 800px;
+      max-height: 800px;
+    }
+
     </style>
 
 </head>
 
 <body>
-    <div id="background">
-        <img src = "nhl.jpg" alt="nhl">
+
         <div id="myContainer">
+          <div class = "row">
+            <div class = "col-md-12 height1">
+
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-2 height2">
+
+            </div>
+            <div class = "col-md-8 height2">
+
+            </div>
+            <div class = "col-md-2 height2">
+
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-12 height1">
+
+            </div>
+          </div>
         </div>
-    </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -88,12 +64,11 @@
         var NHLUrl =
             "https://andersonguelphjs.github.io/class/week12/myJson.json";
         //get the JSON
-        $.get(NHLUrl)
+        $.getJSON(NHLUrl)
             .done(function(data) { //data returned successfully
                 console.log("success ");
                 console.dir(data);//check out the data
-                var NHLData = data.query.results.channel; //make it easier to manage
-                console.dir(NHLData);
+
                 $(document).ready(function() {
                     var myHtml = "";
                     myHtml += '<div id="NHLContainer">';
@@ -118,6 +93,19 @@
                 console.log("fail ");
                 console.dir(data);
             })
+    </script>
+    <script>
+        function getRandomNumber(min,max) {
+            return Math.floor(Math.random() * max + min);
+        }
+        $(document).ready(function() {
+            var bodyColumns = $(".randomColor");
+            bodyColumns.each(function() {
+                $(this).css("background-color", "rgb(" + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + ")");
+            })
+            $("body").css("background-color", "rgb(" + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + "," + getRandomNumber(0,255) + ")");
+            $("body").fadeIn();
+        })
     </script>
 </body>
 
